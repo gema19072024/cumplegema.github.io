@@ -38,14 +38,16 @@
         }
         .teams-container {
             display: flex;
-            align-items: center;
             flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
             margin-top: 20px;
         }
         .teams {
             display: flex;
             flex-direction: column;
-            width: 44%;
+            width: 100%;
+            max-width: 500px;
             margin: 10px;
         }
         .team {
@@ -92,6 +94,8 @@
             color: #ff4500;
             animation: bounce 1s infinite;
             margin: 20px;
+            text-align: center;
+            width: 100%;
         }
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% {
