@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentación Persona 1</title>
+    <title>Detalles del Juego 1</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,13 +32,6 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             text-align: center;
-        }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: 20px 0;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         h2 {
             color: #ff7f50;
@@ -71,18 +64,31 @@
             bottom: 0;
             box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
         }
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        Presentación de Persona 1
+        Detalles del Juego 1
     </header>
     <div class="container">
-        <img src="marc.jpg" alt="Persona 1" class="profile-pic">
-        <h2>Marc</h2>
+        <h2>Juego 1: Carrera de Sacos</h2>
         <p>
-        Soy Marc y aqui vendria una descripcion de quien soy, por ejemplo pues noseque y nose cuantos, esto es solo para rellenar esacio y ver como quien
-        pero ya es suficiente asi que ala
+            La carrera de sacos es una divertida actividad donde los participantes se meten dentro de un saco y deben saltar hasta la línea de meta. 
+            Es un juego perfecto para todas las edades y garantiza risas y emoción.
+        </p>
+        <p>
+            <strong>Reglas:</strong><br>
+            1. Cada participante se coloca dentro de un saco y sostiene los bordes del saco con sus manos.<br>
+            2. A la señal de inicio, los participantes deben saltar hacia adelante en línea recta hasta la meta.<br>
+            3. El primer participante en cruzar la línea de meta sin salirse de su saco gana la carrera.
+        </p>
+        <p>
+            ¡Prepárate para saltar y divertirte en grande!
         </p>
         <a href="index.html" class="back-link">Volver a la página principal</a>
     </div>

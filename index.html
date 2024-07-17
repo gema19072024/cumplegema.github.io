@@ -12,7 +12,7 @@
             padding: 0;
         }
         header {
-            background: url('https://via.placeholder.com/1920x400') no-repeat center center/cover;
+            background: url('festa.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
             padding: 20px 0;
@@ -108,16 +108,72 @@
                 transform: translateY(-10px);
             }
         }
+        .games-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .games-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .game-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .game-buttons a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff7f50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .game-buttons a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 200%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: skewX(-30deg);
+            transition: left 0.5s;
+        }
+        .game-buttons a:hover {
+            background-color: #ff4500;
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .game-buttons a:hover:before {
+            left: 125%;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+            .teams {
+                max-width: 100%;
+            }
+            .game-buttons a {
+                width: 100%;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        ¡Feliz Cumpleaños!
+        ¡Cumple Gema!
     </header>
     <div class="container">
         <div class="intro">
-            <h2>Bienvenidos a la celebración de cumpleaños</h2>
-            <p>Nos divertiremos con juegos y actividades. Aquí están los equipos:</p>
+            <h2>Estáis invitados al evento del verano</h2>
+            <p>Vamos a pasarlo bien el hot domingo 21/07/2024</p>
         </div>
         <div class="teams-container">
             <div class="teams">
@@ -125,7 +181,7 @@
                     <h3>Equipo 1</h3>
                     <a href="persona1.html" class="member">
                         <img src="marc.jpg" alt="Persona 1">
-                        <p>Persona 1</p>
+                        <p>Marc</p>
                     </a>
                     <a href="persona2.html" class="member">
                         <img src="https://via.placeholder.com/50" alt="Persona 2">
@@ -187,6 +243,15 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="games-section">
+        <h2>Juegos</h2>
+        <div class="game-buttons">
+            <a href="juego1.html">Juego 1</a>
+            <a href="juego2.html">Juego 2</a>
+            <a href="juego3.html">Juego 3</a>
+            <a href="juego4.html">Juego 4</a>
         </div>
     </div>
 </body>
